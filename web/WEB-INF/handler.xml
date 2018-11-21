@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<entry key="home">controller.HomePageHandler</entry>
+
+	<!-- PRODUCT -->
+	<entry key="productOverview">controller.ProductOverviewHandler</entry>
+	<entry key="productFormAdd">controller.ProductFormAddHandler</entry>
+	<entry key="productFormUpdate">controller.ProductFormUpdateHandler</entry>
+	<entry key="productAdd">controller.ProductAddHandler</entry>
+	<entry key="productUpdate">controller.ProductUpdateHandler</entry>
+	<entry key="productConfirmDelete">controller.ProductConfirmDeleteHandler</entry>
+	<entry key="productDelete">controller.ProductDeleteHandler</entry>
+	
+	<!-- USER -->
+	<entry key="userOverview">controller.UserOverviewHandler</entry>
+	<entry key="userFormSignUp">controller.UserFormSignUpHandler</entry>
+	<entry key="userFormUpdate">controller.UserFormUpdateHandler</entry>
+	<entry key="userSignUp">controller.UserSignUpHandler</entry>
+	<entry key="userUpdate">controller.UserUpdateHandler</entry>
+	<entry key="userConfirmDelete">controller.UserConfirmDeleteHandler</entry>
+	<entry key="userDelete">controller.UserDeleteHandler</entry>
+	<entry key="userCheckPasswordForm">controller.UserCheckPasswordFormHandler</entry>
+	<entry key="userCheckPassword">controller.UserCheckPasswordHandler</entry>
+	<entry key="userLogin">controller.UserLoginHandler</entry>
+	<entry key="userLogout">controller.UserLogoutHandler</entry>
+	
+	<!-- SHOP -->
+	<entry key="shopCartOverview">controller.ShopCartOverviewHandler</entry>
+	<entry key="shopCartAdd">controller.ShopCartAddHandler</entry>
+	<entry key="shopCartUpdate">controller.ShopCartUpdateHandler</entry>
+	<entry key="shopCartDelete">controller.ShopCartDeleteHandler</entry>
+	<entry key="shopOrderOverview">controller.ShopOrderOverviewHandler</entry>
+	<entry key="shopOrderConfirmation">controller.ShopOrderConfirmationHandler</entry>
+	
+</properties>
