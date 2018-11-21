@@ -51,7 +51,7 @@ h2, main, footer {
 }
 
 h1 {
-	background-image: url("../images/banner.jpg");
+	background-image: url("../images/bannerKlein.png");
 	height: 100px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -154,7 +154,7 @@ input {
 	max-width: 1000px;
 	}
 	h1 {
-	background-image: url("../images/banner.png");
+	background-image: url("../images/bannerKlein.png");
 	}
 	
 	nav ul {
