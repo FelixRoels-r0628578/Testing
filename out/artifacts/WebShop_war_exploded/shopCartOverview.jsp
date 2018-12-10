@@ -65,9 +65,39 @@
 					</table>
 				</c:otherwise>
 			</c:choose>
+
+			<%--Leveringsadres form--%>
 			
 						
 			<form action="Controller?action=shopOrderOverview" method="post" novalidate>
+				<p>
+				<label for="straat">Straat </label>
+				<input type="text" id="straat" name="straat" required
+					   value="<c:out value="${adres.straat != null ? adres.straat : ''}"/>">
+				</p>
+				<p>
+					<label for="nummer">Huisnummer </label>
+					<input type="text" id="nummer" name="nummer" required
+						   value="<c:out value="${adres.nummer != null ? adres.nummer : ''}"/>">
+				</p>
+				<p>
+					<label for="bus">Bus </label>
+					<input type="number" id="bus" name="bus"
+						   value="<c:out value="${adres.bus != null ? adres.bus : ''}"/>">
+				</p>
+				<p>
+					<label for="postcode">Postcode </label>
+					<input type="number" id="postcode" name="postcode" required
+						   value="<c:out value="${adres.postcode != null ? adres.postcode : ''}"/>">
+				</p>
+				<p>
+					<label for="plaats">Plaats </label>
+					<input type="text" id="plaats" name="plaats" required
+						   value="<c:out value="${adres.plaats != null ? adres.plaats : ''}"/>">
+				</p>
+
+
+
 				<input type="submit" value="Pay" class="inline-form"/>
 			</form>
 			
