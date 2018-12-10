@@ -19,6 +19,10 @@ public class Adres {
         setPlaats(plaats);
     }
 
+    public Adres(){
+
+    }
+
     public int getBus() {
         return bus;
     }

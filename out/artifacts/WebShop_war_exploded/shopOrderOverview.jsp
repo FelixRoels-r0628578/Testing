@@ -54,7 +54,10 @@
 					</table>
 				</c:otherwise>
 			</c:choose>
-			
+
+			<p><c:out value="${adres.straat}"/> <c:out value="${adres.nummer}" />></p>
+			<p>Bus <c:out value="${adres.bus}"/></p>
+			<p><c:out value="${adres.postcode}"/> <c:out value="${adres.plaats}"/></p>
 						
 			<form action="Controller?action=shopOrderConfirmation" method="post" novalidate>
 				<input type="submit" value="Confirm" class="inline-form" />

@@ -54,7 +54,11 @@
 					</table>
 				</c:otherwise>
 			</c:choose>
-			
+
+			<%--Adres zou hier moeten verschijnen--%>
+			<p></p>
+			<p>Bus </p>
+			<p></p>
 						
 			<form action="Controller?action=shopOrderConfirmation" method="post" novalidate>
 				<input type="submit" value="Confirm" class="inline-form" />
