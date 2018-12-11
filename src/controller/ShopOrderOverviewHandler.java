@@ -68,6 +68,8 @@ public class ShopOrderOverviewHandler extends RequestHandler {
 		try {
 			int bus = Integer.parseInt(request.getParameter("bus"));
 			adres.setBus(bus);
+		}catch (NumberFormatException ex){
+			errors.put("bus", "bus not valid");
 		} catch(ModelException e){
 			errors.put("bus", e.getMessage());
 		}

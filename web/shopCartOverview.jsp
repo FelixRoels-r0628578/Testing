@@ -68,7 +68,7 @@
 
 		<%--Leveringsadres form--%>
 
-		<%@include file="partial/errors.jsp" %>
+		
 		<form action="Controller?action=shopOrderOverview" method="post" novalidate>
 			<p>
 				<label for="straat">Straat </label>
