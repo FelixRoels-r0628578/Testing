@@ -7,9 +7,7 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Groep15_Testing_WebShop" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="jstl-1.2" />
-        </element>
+        <element id="directory" name="lib" />
       </element>
     </root>
   </artifact>
