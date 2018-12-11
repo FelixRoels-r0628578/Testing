@@ -2,12 +2,14 @@ package service;
 
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
 import db.*;
 import exception.DBException;
 import exception.ModelException;
+import model.Adres;
 import model.Product;
 import model.ProductOrder;
 import model.User;
@@ -15,10 +17,12 @@ import model.User;
 public class ShopService {
 	private UserRepository userRepository;
 	private ProductRepository productRepository;
+	private List<Adres> adresList;
 
 	public ShopService(Properties properties) throws DBException{
 		userRepository = new UserRepositoryInMemory();
 		productRepository = new ProductRepositoryInMemory();
+		adresList = new ArrayList<>();
 	}
 	
 	// PERSON
@@ -91,5 +95,6 @@ public class ShopService {
 	private ProductRepository getProductRepository() {
 		return productRepository;
 	}
+
 
 }

@@ -68,7 +68,7 @@
 
 		<%--Leveringsadres form--%>
 
-
+		<%@include file="partial/errors.jsp" %>
 		<form action="Controller?action=shopOrderOverview" method="post" novalidate>
 			<p>
 				<label for="straat">Straat </label>
@@ -78,7 +78,7 @@
 			<p>
 				<label for="nummer">Huisnummer </label>
 				<input type="text"   id="nummer" name="nummer" required
-					   value="<c:out value="${adres.nummer != null ? adres.nummer : ''}"/>">
+					   value="<c:out value="${adres.nummer != null ? adres.nummer : ''}"/>" min="1">
 			</p>
 			<p>
 				<label for="bus">Bus </label>
@@ -86,9 +86,9 @@
 					   value="<c:out value="${adres.bus != null ? adres.bus : ''}"/>">
 			</p>
 			<p>
-				<label for="postcode"  min="0">Postcode </label>
+				<label for="postcode"  >Postcode </label>
 				<input type="number" id="postcode" name="postcode" required
-					   value="<c:out value="${adres.postcode != null ? adres.postcode : ''}"/>">
+					   value="<c:out value="${adres.postcode != null ? adres.postcode : ''}"/>" min="1000" max="9999">
 			</p>
 			<p>
 				<label for="plaats">Plaats </label>
