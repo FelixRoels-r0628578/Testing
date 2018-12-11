@@ -39,17 +39,13 @@ public class Adres {
     }
 
     public void setNummer(String nummer) throws ModelException {
-        this.nummer = nummer;
-        //TODO kijk na of de regex werkt.
-        if(nummer.isEmpty() || nummer == null){
-            throw new ModelException("nummer kan niet leeg zijn");
+        if(nummer == null || nummer.isEmpty()){
+            throw new ModelException("nummer mag niet leeg zijn");
         }
-        String HUISNUMMER_PATTERN = "^(.\\d{3}[a-zA-Z])$";
-        Pattern p = Pattern.compile(HUISNUMMER_PATTERN);
-        Matcher m = p.matcher(nummer);
-        if(!m.matches()){
-            throw new ModelException("Huisnummer not valid");
+        if(Integer.parseInt(nummer) < 1){
+            throw new ModelException("nummer moet groter dan 0 zijn");
         }
+        this.nummer=nummer;
     }
 
     public String getPlaats() {
