@@ -68,7 +68,7 @@
 
 		<%--Leveringsadres form--%>
 
-		
+
 		<form action="Controller?action=shopOrderOverview" method="post" novalidate>
 			<p>
 				<label for="straat">Straat </label>

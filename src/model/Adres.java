@@ -39,7 +39,7 @@ public class Adres {
     }
 
     public void setNummer(String nummer) throws ModelException {
-        if(nummer == null || nummer.isEmpty()){
+        if(nummer == null || nummer.trim().isEmpty()){
             throw new ModelException("nummer mag niet leeg zijn");
         }
         if(Integer.parseInt(nummer) < 1){
@@ -76,7 +76,7 @@ public class Adres {
 
     public void setPostcode(int postcode) throws ModelException {
         this.postcode = postcode;
-        if(postcode <= 0 || postcode > 9999){
+        if(postcode <= 1000 || postcode > 9999){
             throw new ModelException("Gelieve een geldige postcode in te geven");
         }
     }

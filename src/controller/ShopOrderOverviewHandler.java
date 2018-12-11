@@ -75,9 +75,11 @@ public class ShopOrderOverviewHandler extends RequestHandler {
 		}
 	}
 	private void setNummer(HttpServletRequest request, Map<String, String> errors, Adres adres) {
-		String nummer = request.getParameter("bus");
+		String nummer = request.getParameter("nummer");
 		try{
 			adres.setNummer(nummer);
+		}catch (NumberFormatException ex){
+			errors.put("nummer", "nummer not valid");
 		} catch(ModelException e){
 			errors.put("nummer", e.getMessage());
 		}
